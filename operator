@@ -1,0 +1,19 @@
+
+#include <stdio.h>
+int main()
+{
+    int a,b,c,d;
+    scanf("%d",&a);
+    scanf("%d",&b);
+    scanf("%d",&c);
+    scanf("%d",&d);
+    int big=a>b && b>c && c>d ? a:((b>c && c>d) ? b: (c>d)?c:d);
+    printf("%d",big);
+    int small=a<b && b<c&&c<d ? a:((b<c && c<d) ? b: (c<d)?c:d);
+    printf("%d",small);
+    int sum=big+small;
+    printf("%d",sum);
+    
+    
+    
+}
