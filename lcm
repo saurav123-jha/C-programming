@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    int a,b,big;
+    scanf("enter the two numbers");
+    int step=big;
+    big=a>b?a:b;
+    while(1){
+        if(big%a==0 && big%b==0)
+        break;
+        else{
+            big=big+step;
+        }
+    }
+    printf("the lcm is %d",big);
+}
